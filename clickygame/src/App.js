@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+// import Title from "./components/Title";
 import Jumbotron from './components/Jumbotron';
 // import friends from "./friends.json";
+import Game from './components/Game';
 import './App.css';
 
 // <div className="App">
@@ -19,13 +20,9 @@ import './App.css';
 
 const App = () => (
   <div className="container-fluid mainContainer">
-    <Title>
-      Welcome to My Nightmare[change name]
-      </Title>
-      <Wrapper />
       <Jumbotron />
-    
-    {/* <MainGameContainer />  */}
+    {/* <Wrapper /> */}
+    <Game />
   </div>
 );
 

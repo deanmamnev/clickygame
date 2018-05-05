@@ -1,0 +1,28 @@
+.jumbotron {
+	background-image: url("https://cdna.artstation.com/p/assets/images/images/001/672/846/large/dean-mamnev-12192015-b.jpg?1450573864");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	margin-bottom: 0px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 65px;
+	text-transform: uppercase;
+	font-weight: 900;
+    color: #ffffff;
+    -webkit-text-stroke: 5px black;
+}
+
+.jumbotron p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+    font-weight: 500;
+    padding-top:90px;
+    color: #ffffff;
+    
+	/* text-transform: uppercase; */
+}
