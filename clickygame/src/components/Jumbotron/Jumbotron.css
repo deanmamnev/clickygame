@@ -17,12 +17,16 @@
     -webkit-text-stroke: 5px black;
 }
 
-.jumbotron p {
+.lead{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
     font-weight: 500;
     padding-top:90px;
     color: #ffffff;
-    
-	/* text-transform: uppercase; */
+}
+.©{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
 }
