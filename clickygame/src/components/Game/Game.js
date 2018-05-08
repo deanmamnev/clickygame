@@ -11,6 +11,11 @@ class Game extends Component {
         topScore: 0
     };
 
+    endShake = () => {
+        console.log("end shake")
+        this.setState({className:""})
+    }
+
     handleClick = (id, clicked) => {
         const imageOrder = this.state.images
 
@@ -19,12 +24,23 @@ class Game extends Component {
             {
                 imageOrder[index].clicked = false;
             });
-            return this.setState({
+            
+            this.setState({
                 image: imageOrder.sort(() =>
                 Math.random() - 0.5),
                 message: "Wrong!",
-                score: 0
+                score: 0,
+                className:"shaking",
+                
             })
+
+            setTimeout(this.endShake,1000);
+
+            // this.setState({
+            //     setTimeout(function(){ className:""; }, 1000)
+            // })
+
+                // className={"shaking"}
         }
         else {
             imageOrder.forEach((image, index) => {
@@ -51,7 +67,7 @@ class Game extends Component {
 
     render() {
         return (
-            <div className="container-fluid cardContainer">
+            <div className={"container-fluid cardContainer " +this.state.className}>
                 <div className="message text-center">
                     <p> {this.state.message} </p>
                     </div>
