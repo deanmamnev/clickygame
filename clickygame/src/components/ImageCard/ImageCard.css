@@ -1,15 +1,16 @@
-.card {
+.notCard {
     padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    text-align: center;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #aaaaaa;
 }
 
-.card img {
+.notCard img {
     margin: 5px;
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid rgba(0, 0, 0, 0.25);
     max-height: auto;
-    max-width: 200px;
+    max-width: 100%;
     background-color: white;
 }
